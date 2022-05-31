@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+
+body{
+  background-color: #121214;
+  background-image: url(../images/Desktop.png);
+  background-size: 1920px 1080px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  background-image: url(./images/mask.svg);
+  background-color: #202024;
+
+  width: 358px;
+  height:540px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -30px;
+  position: relative;
+  left:0%
+}
+
+.container{
+  width: 259px;
+  height: 471px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.belt{
+  top: 0%;
+  left: 45px;
+  position: relative;
+  z-index:2;
+}
+
+.broke{
+  left: -31px;
+  position: relative;
+  z-index: 1;
+  top: 5px;
+}
+
+.polygon{
+  width: 160px;
+  height: 184px;
+  position: relative;
+
+  clip-path: polygon(50% 0, 100% 25%, 98% 75%, 50% 100%, 0 75%, 0 25%);
+
+  background-image: url(./images/IMG_3324.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texts{
+  color: #C4C4CC;
+
+  gap: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gitLink{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #C4C4CC;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+ul li{
+  margin-right: 8px;
+}
+
+.links{
+  gap:8px;
+
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gitLogo{
+  width: 16px;
+  height: 16px;
+}
+
+.gitLink{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+p{
+  color: #C4C4CC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  margin-top: 32px;
+}
+
+.name{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin-top: 7px;
+}
+
+.avatar span{
+  position: absolute;
+  z-index: 1;
+  margin-top: -15px;
+  left: 100px;
+}
+
+.avatar{
+  margin-bottom: 24px;
+
+  display:flex;
+  justify-content:center;
+  margin-top: 60px;
+}
+
+.gitHub{
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+@media (max-width: 375px) {
+  .belt, .broke{
+    display:none;
+  }
+  body{
+    background-color: #202024;
+  }
+
+  main{
+    width: 375px;
+    height: 812px;
+
+    background-color: #202024;
+    background-repeat: no-repeat;
+    background-image: url(images/maskMobile.png);
+    background-size: cover;
+  }
+  .avatar{
+      margin-top: 0px;
+  }
+  p{
+    margin-bottom: 64px;
+  }
+}
