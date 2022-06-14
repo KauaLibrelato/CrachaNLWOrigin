@@ -7,7 +7,7 @@
   font-family: "Roboto";
 }
 
-body{
+body {
   background-color: #121214;
   background-image: url(../images/Desktop.png);
   background-size: 1920px 1080px;
@@ -20,12 +20,12 @@ body{
   align-items: center;
 }
 
-main{
+main {
   background-image: url(./images/mask.svg);
   background-color: #202024;
 
   width: 358px;
-  height:540px;
+  height: 540px;
 
   display: flex;
   align-items: center;
@@ -33,10 +33,10 @@ main{
 
   margin-top: -30px;
   position: relative;
-  left:0%
+  left: 0%
 }
 
-.container{
+.container {
   width: 259px;
   height: 471px;
 
@@ -46,21 +46,21 @@ main{
   justify-content: center;
 }
 
-.belt{
+.belt {
   top: 0%;
   left: 45px;
   position: relative;
-  z-index:2;
+  z-index: 2;
 }
 
-.broke{
+.broke {
   left: -31px;
   position: relative;
   z-index: 1;
   top: 5px;
 }
 
-.polygon{
+.polygon {
   width: 160px;
   height: 184px;
   position: relative;
@@ -73,7 +73,7 @@ main{
   background-position: center;
 }
 
-.texts{
+.texts {
   color: #C4C4CC;
 
   gap: 4px;
@@ -84,7 +84,7 @@ main{
   align-items: center;
 }
 
-.gitLink{
+.gitLink {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,37 +92,38 @@ main{
   color: #C4C4CC;
 }
 
-ul{
+ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-ul li{
+
+ul li {
   margin-right: 8px;
 }
 
-.links{
-  gap:8px;
+.links {
+  gap: 8px;
 
-  display:flex;
+  display: flex;
   justify-content: center;
   margin-top: 40px;
 }
 
-.gitLogo{
+.gitLogo {
   width: 16px;
   height: 16px;
 }
 
-.gitLink{
+.gitLink {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
 }
 
-p{
+p {
   color: #C4C4CC;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +134,7 @@ p{
   margin-top: 32px;
 }
 
-.name{
+.name {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -142,37 +143,70 @@ p{
   margin-top: 7px;
 }
 
-.avatar span{
+.avatar span {
   position: absolute;
   z-index: 1;
   margin-top: -15px;
   left: 100px;
 }
 
-.avatar{
+.avatar {
   margin-bottom: 24px;
 
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
 }
 
-.gitHub{
+.gitHub {
   display: flex;
   align-items: center;
 
   gap: 12px;
 }
 
-@media (max-width: 375px) {
-  .belt, .broke{
-    display:none;
+@media (max-width: 425px) {
+
+  .belt,
+  .broke {
+    display: none;
   }
-  body{
+
+  body {
     background-color: #202024;
   }
 
-  main{
+  main {
+    width: 425px;
+    height: 812px;
+
+    background-color: #202024;
+    background-repeat: no-repeat;
+    background-image: url(images/maskMobile.png);
+    background-size: cover;
+  }
+
+  .avatar {
+    margin-top: 0px;
+  }
+
+  p {
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .belt,
+  .broke {
+    display: none;
+  }
+
+  body {
+    background-color: #202024;
+  }
+
+  main {
     width: 375px;
     height: 812px;
 
@@ -181,10 +215,12 @@ p{
     background-image: url(images/maskMobile.png);
     background-size: cover;
   }
-  .avatar{
-      margin-top: 0px;
+
+  .avatar {
+    margin-top: 0px;
   }
-  p{
+
+  p {
     margin-bottom: 64px;
   }
 }
